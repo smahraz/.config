@@ -54,7 +54,7 @@ for cmd in "${requirements[@]}"; do
 done
 
 
-
+rm -rfv $HOME/.zshrc
 
 install_ohmyzsh
 clone_plugins
