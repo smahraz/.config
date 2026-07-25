@@ -48,6 +48,9 @@ local menu        = "hyprlauncher"
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 -- end)
 
+hl.on("hyprland.start", function () 
+  hl.exec_cmd("hyprpaper")
+end)
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
@@ -91,8 +94,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+          active_border = "rgb(b84a5a)",
+          inactive_border = "rgb(2b2023)",
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
